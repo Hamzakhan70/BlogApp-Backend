@@ -1,0 +1,37 @@
+To access the evn file please install the dotenv file 		npm I dotenv
+What is the purpose of the populate method in the 
+Full Stack Blog project
+
+First of all we develop a backend
+In Backend we make folder structure
+Then we make connection with database
+Then make schema and model for the database
+Then  make routing setup
+End points is basically a routes defined in the main file like app.js / server.js
+App.use is behave as middle ware which means it will call always
+Bcrypt js is used to encrypt the password
+Authorization: its means that when user login we should tell the server that yes keep it login or remember it.
+Middle ware: It contains the error file which will always call in controller whenever we need this.
+That Global error function must be used inside of the server file as a middleware. Which will be called whenever we need it.
+Authentication : means to allow the user to login with right credentials
+Authorization : allow logged-in user to perform different tasks.
+http-Server : servers are stateless they can’t remember the logged in user by default.
+We can make is statefull by using session, cookies and jwt token verification.
+In this project we make a session. And store logged in user in the session-cookie.
+Then make middleware which will always called when we  need to verify the user.
+Perfect itssss workinggggg but prolem is that session is stored in our application whenever we start the server session lost we need to login again.
+Solution to that problem is that we will make a session store inside of MONGO.
+
+How to upload a file
+Mongodb is not made for hosting assets. It is not recommended for this.
+Cloudinary is popular library for saving images,videos,files and pics.
+Multer is used to upload the file from the express. Because express is not able to upload a file.
+To add file we need to use form. Not body
+
+Template Engine
+Template engine help use inject dynamic data to the webpage. Blue print for the webpages.
+Ejs, HanldleBar and pug are template engine they help us to transfer data from server to client.
+Template engine provide us a webpages with placeholders which can receive the data.
+Always keep template engine simple.
+Partials are used to overcome repitition of the code. 
+Embeded javascript is similar to html that why we use it
